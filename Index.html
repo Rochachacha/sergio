@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+<title>Orsetto</title>
+<meta charset="utf-8">
+<meta name="viewpoint" content="width=device=width, initial-scale=1.0">
+<link href="Stili-ser.css" rel="stylesheet" type="text/css">
+
+    </head>
+
+    <body>
+        
+    <div id="introduzione">
+        <h1>Congratulazioni, sei stato hackerato</h1>
+        <p>Schiaccia avanti per darmi l'accesso a tutte le tue infromazioni</p>
+        <button id="bruh" onclick="messaggiobruh('messaggio1', 'messaggio2')"> Nu hu</button>
+        <button id="yee" onclick="messaggioyee('messaggio2', 'messaggio1','casellaTesto','hehe')"> Avanti</button>
+        <div id="messaggio1">Stronzo, non ti fidi della tua ragazza :/<br>Schiaccia avanti.</div>
+        <div id="messaggio2">17 anni sprecati se ti fai fregare così facilmente.<br> Non finirà bene, almeno chè tu non abbia qualcosa da dire...</div>
+        <input type="text" id="casellaTesto" placeholder="Salvati con le tue parole" style="width: 300px; padding: 10px;">
+        <button id="hehe" onclick="boom('introduzione', 'parte2')">Invia</button>
+    </div>
+   
+    <div id="parte2">
+        <p>Stolto! Credi veramente che voglia rinunciare alle tue informazioni?</p>
+        <p>Esempio... ho scoperto che sai difenderti da questo:</p>
+        <button id="carro" onclick="tank('sorp1')">Chi sono?</button>
+   
+        <div id="sorp1">
+            <img id="bimbo" src="https://img.pikbest.com/png-images/20240524/battle-tank-png_10581735.png!sw800">
+            <p>Ora come vuoi sopravvivere? Hai 2 scelte:</p>
+            <button id="Fuoco" onclick="cambio('parte2','morto')">Attack the D point</button>
+            <button id="estorsione" onclick="cambio('parte2','NO')">Continuare a scoprire con cosa potrò ricattarti</button>
+        </div>
+    </div>    
+
+    <!--Diramazione crociato-->
+    <div id="morto">
+        <img id="kaboom" src="https://static.vecteezy.com/system/resources/previews/027/292/449/original/bomb-explosion-with-fire-flames-and-smoke-isolated-on-transparent-background-png.png">
+        <p> Soldato, non sei un carrista. Il suicidio potevi evitartelo</p>
+        <button id="gesù" onclick="cambio('morto','spada')">Respown</button>
+    </div>
+       
+   <div id="spada">
+    <p> Oh no- Sei finito nel passato... tanto passato </p>
+    <img id="crociato" src="https://cdn.pixabay.com/photo/2017/11/11/16/24/knight-2939429_1280.png">
+    <p>Scegli l'arma con cui difenderti:</p>
+    <div id="tup">
+    <img id="spad" src="https://throne.help/users/throne/imgExtCatalog/big/m478.png" onclick="cambio('spada','tvb')">
+    <img id="spad" src="https://tr.rbxcdn.com/6d6780b3bca796024d2965eb8d8c4f18/420/420/Hat/Png" onclick="cambio('spada','Guts')">
+   </div>
+   </div>
+
+   <!--Diramazione Berserk-->
+
+    <div id="Guts">
+        <p>Credo che non sia registrata storicamente questa spada...<br> MA a noi non importa quindi:</p>
+        <p>Scegli il mostro contro cui combattere</p>
+        <img id="ut" src="https://www.siliconera.com/wordpress/wp-content/uploads/2016/08/28139350304_12d3a7a9c0_o.png">
+            <img id="demone1" src="https://static.wikia.nocookie.net/doom/images/3/3b/Cacodemon_Eternal.png/revision/latest?cb=20230909063612" onclick="alert('Esiste un mostro più forte')">
+            <img id="kitty" src="https://www.schesir.com/cdn/shop/files/umido-gatto-gatto-min_3092b92a-25f1-435b-9da1-ea6834417571.png?v=1694769730" onclick="cambio('Guts','miao')">
+            <img id="demone2" src="https://www.fiestaspaco.com/109-superlarge_default/mascara-sinister-bughuul-mr-boogie.jpg" onclick="alert('Esiste un mostro più forte')">
+    </div>
+
+    <div id="miao">
+        <p>Vuoi veramente combattere contro un mio simile ?</p>
+        <img id="faccia" src="https://static.vecteezy.com/system/resources/previews/021/391/360/non_2x/3d-emoji-expression-with-sad-face-free-png.png">
+        <button id="bravo" onclick="cambio('miao','gatto')">No</button>
+        <button id="no-btn">Si</button>
+    </div>
+
+    <div id="gatto">
+        <p>CHE BRAVO RAGAZZO <br> vuoi sapere cosa hai ottenuto con questa scelta TOTALMENTE autonoma?</p>
+        <button onclick="cambio('gatto','comp')" >miao</button>
+
+    </div>
+
+<!--Diramazione arco-->
+    <div id="tvb">
+        <p>Hai detto arco? Oh che bravo arciere</p>
+        <img id="freccia" src="https://cdn.pixabay.com/photo/2021/02/22/06/47/arco-de-garra-6039059_1280.png">
+        <p>Scocca una freccia e vediamo se riesci a sconfiggermi </p>
+        <button id="scoc" onclick="cambio('tvb','hb1')">SCOCCA!</button>
+    </div>
+
+    <div id="hb1">
+        <p> OH- MI HAI COLPITO IL CUORE <br> Hai vinto- <br> Oh- ti chiedi cosa?</p>
+        <button id="finale" onclick="cambio('hb1','comp')">Scoprilo</button>
+        
+    </div>
+
+<!--Diramazione coraggio-->
+    <div id="NO">
+        <p> Che follie... non sono brava in verità con scoprire le cose.<br> Ma stai tranquillo, tu ti fidi del fatto che io sappia il pin del telefono e alcune password</p>
+        <button id="bravo" onclick="cambio('NO','cestino')">Si</button>
+        <button id="no-btn">NO</button>
+    </div>
+
+    <div id="cestino">
+        <p>Aww, che dolce. Se mi permetti di "TUA SPONTANEA" volontà questo... mhhhh</p>
+        <p>Comunque... sto eliminando alcuni file per lasciare spazio a Genshin Impact... Mi vuoi dare una mano? </p>
+        <img class="file" src="https://cdn2.steamgriddb.com/logo/40b28f4fc90cff423e2a75266497539f.png" alt="File 1" draggable="true">
+      <img class="file" src="https://images.wikia.com/chivalry2/images/b/bc/Wiki.png" alt="File 2" draggable="true">
+      <img id="trash" src="https://static.vecteezy.com/system/resources/previews/009/303/153/original/metallic-trash-can-clipart-design-illustration-free-png.png" alt="Cestino" draggable="false">
+      </div>
+
+      <div id="bop">
+
+        <p>Ottimo, hai recuperato abbastanza spazio. In che cartella vuoi scaricare il gioco?</p>
+        
+            <img id="brutta-scelta" src=" https://upload.wikimedia.org/wikipedia/it/3/31/Cartella_smart.png" onclick="alert('Cartella inaccessibbile')">
+            <img id="bumbum" src=" https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Heart-image.png/640px-Heart-image.png" onclick="cambio('bop','cuore')"  > 
+
+      </div>
+
+      <div id="cuore">
+<p>Lo stiamo scariando in questa cartella …. ei-, ma è nel mio dispositivo. </p>
+<div class="contenitore">
+    <img id="rapp" src=" https://upload.wikimedia.org/wikipedia/it/3/31/Cartella_smart.png" >
+    <button id=“pass” onclick= "cambio('cuore','hb2')">Contenuti segreti </button>
+       </div>
+ </div>
+
+<div id="hb2">
+<p>Ma sai cosa…. invece di leggere queste cose perchè non la smettiamo entrambi e ti ridò i tuoi file più una sorpresina?</p>
+<button id=“si” onclick="cambio('hb2','comp')">SI</button>
+<button id=”yep” onclick="cambio('hb2','comp')">OVVIAMENTE</button>
+</div>
+
+    <div id="comp">
+        <h1>BUON COMPLEANNO</h1>
+        <p>Hai sconfitto l'hacker e le tue informazioni sono al sicuro. <br> Puoi sopravvivere al nuovo anno sapedo che batti l'informatica</p>
+        <p>Però una cosa non la otterrai mai... la password per °°°°°. </p>
+        <div id="back">
+            <p>se vuoi scoprire le altre strade, ritenta con scelte diverse</p>
+            <button onclick="cambio('comp','parte2')"> trona indietro</button>
+        </div>
+        
+        <img id="Torta" src="https://www.versiliatoday.it/wp-content/uploads/2016/01/auguri-candeline-torta-3.png">
+        <p id="secret"> Se trovi questo messaggio abilmente nascosto, la password è per il mio cuore e già la hai... auguri ♡ ❦ </p>
+    </div>
+
+       <script>
+        let eliminati = 0;
+      
+        function messaggiobruh(messaggioDaMostrare, messaggioDaNascondere){
+            document.getElementById(messaggioDaNascondere).style.display = "none";
+            document.getElementById(messaggioDaMostrare).style.display = "block";
+        }
+
+        function messaggioyee(messaggioDaMostrare, messaggioDaNascondere, inutile, hehe){
+            document.getElementById(messaggioDaNascondere).style.display = "none";
+            document.getElementById(inutile).style.display = "block";
+            document.getElementById(messaggioDaMostrare,).style.display = "block";
+            document.getElementById(hehe).style.display = "block";
+          
+        }
+
+        function boom(introduzione, parte2){
+            document.getElementById(introduzione).style.display="none";
+            document.getElementById(parte2).style.display = "block";
+        }
+
+        function tank(sorp1){
+            document.getElementById(sorp1).style.display = "block";
+        }
+
+        function cambio(vecchio, nuovo){
+            document.getElementById(vecchio).style.display="none";
+            document.getElementById(nuovo).style.display = "block";
+        }
+
+//No in fuga
+        const noButton = document.getElementById("no-btn");
+        noButton.addEventListener("mouseover", () => {
+          noButton.style.position = "absolute";
+          noButton.style.left = Math.random() * 80 + "vw";
+          noButton.style.top = Math.random() * 80 + "vh";
+         });
+
+//File e cestino
+        const files = document.querySelectorAll('.file');
+        const trash = document.getElementById('trash');
+        const messaggioEliminati = document.getElementById('eliminati');
+
+        files.forEach(file => {
+            file.ondragstart = function(event) {
+                event.dataTransfer.setData('text/plain', event.target.alt);
+            };
+        });
+
+        trash.ondragover = function(event) {
+            event.preventDefault();
+        };
+
+        trash.ondrop = function(event) {
+            const fileName = event.dataTransfer.getData('text/plain');
+            const droppedFile = [...files].find(file => file.alt === fileName);
+            if (droppedFile) {
+                droppedFile.style.display = 'none';
+                eliminati++; 
+            }
+            if (eliminati === 2) {
+                document.getElementById('cestino').style.display="none";
+                document.getElementById('bop').style.display = "block";
+                }
+        };
+
+        </script>
+    </body>
+</html>

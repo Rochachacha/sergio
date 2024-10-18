@@ -1,0 +1,173 @@
+body{
+    background-color:rgb(34, 39, 63);
+    color:rgb(207, 196, 195);
+    font-family: arial;
+    }
+
+    h1{
+        font-size: 300%;
+    }
+
+   p{
+      font-size: 150%;
+    }
+
+  button{
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.437);
+    border: 5px solid rgb(1, 7, 124);
+    border-radius: 6px;
+    font-size: 120%;
+    font-family: arial;
+  }
+
+  #casellaTesto{
+    font-size: 120%;
+    font-family: arial;
+  }
+
+  #tup{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+ }
+
+ #secret{
+    font-size: 40%;
+ }
+  
+.contenitore img{
+    width: 55%;
+    height: auto; 
+}
+
+.contenitore button{
+    position: absolute;
+            top: 50%; /* Posiziona il bottone al 50% dell'altezza dell'immagine */
+            left: 38%; /* Posiziona il bottone al 50% della larghezza */
+            transform: translate(-70%, -50%); /* Centra il bottone esattamente sopra l'immagine */
+            color: #000;
+            width: 52%;
+            cursor: pointer;
+}
+
+.contenitore {
+    position: relative;
+    width: 40%; /* Dimensione del contenitore (immagine) */
+     /* Centra il contenitore */
+     margin-left: 10%;
+}
+
+#torta{
+    width: 35%;
+    height: 35%;
+}
+
+#back{
+    position: relative;
+    margin-left: 60%;
+}
+
+#ut{
+    width: 30%;
+    height: auto;
+    position:absolute;
+    margin-top: 15%;
+}
+
+#demone1{
+    width: 15%;
+    height: auto;
+    position: relative;
+    margin-left: 70%;
+    cursor: pointer;
+}
+
+#demone2{
+    width: 40%;
+    height: auto;
+    position: absolute;
+    margin-left: -35%;
+    cursor: pointer;
+    margin-top: 17%;
+}
+
+#kitty{
+    width: 30%;
+    height: auto;
+    position: relative;
+    margin-left: 60%;
+    cursor: pointer;
+}
+
+#faccia{
+    width: 20%;
+}
+
+/* Parte tecnica*/
+   #messaggio1, #messaggio2 {
+            display: none;
+            margin-top: 20px;
+            color: rgb(207, 196, 195);
+            font-size: 150%;
+            font-family: arial;
+        }
+
+    #casellaTesto,#hehe, #parte2, #death, #morto, #sorp1, #bop, #spada, #tvb, #hb1, #comp, #NO, #cestino, #cuore, #hb2, #Guts, #miao, #gatto{
+        display: none;
+    }
+     #bimbo{
+        width: 40%;
+        height: 30%;
+     }
+
+     #kaboom{
+        width: 75%;
+        height: 80%;
+     }
+
+     #crociato{
+        width: 25%;
+        height: 25%;
+     }
+
+     #spad{
+        cursor: pointer;
+        width: 20%;
+        height: 20%;
+       }
+
+     #freccia{
+        width: 35%;
+        height: 35%;
+     }
+
+
+     #trash {
+        width: 20%;
+        height: 20%;
+        margin-bottom:27%;
+       
+
+        }
+        .file {
+            margin-bottom: 60%;
+            width: 15%;
+            height: 2%;
+            cursor: grab;
+        }
+
+       #brutta-scelta{
+        width: 60%;
+        height: 60%;
+        cursor: pointer;
+       }
+
+       #bumbum{
+        width: 4%;
+        height: 4%;
+        margin-left: 40%;
+        cursor: pointer;
+       }
+
+       
